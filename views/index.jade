@@ -1,14 +1,23 @@
-!= title_with_markup()
-
 :markdown
-	**Whoo!** You got everything working. Now get to making cool things : )
+	# Notes on Tech
+	## Hi, I am rash, and this is my opinion on everything techy.
+	I produce code for over ten years now, and encountered many software technologies.  
+	I, of course, have a opinion on every one of them, with different levels of objectiveness.
+	### Notes on Tech is the collection of my opinions.
+	### Each opinion is rated by objectiveness, depth of study and experience. (Also, out-of-date-iness).
 
-p this file can be found in views/index.jade
+	This site is not a chronological blog, but perhaps I list the changelogs somewhere.  
+	Sometimes, articles have the warning tag "retrospective", when it has been some time between encounter and writing down of my opinion.
 
-include _partial
+	My favorite techs currently are nodejs, coffeescript, mongodb, redis, archlinux
 
-:markdown
-	For help and documentation, check out [http://roots.cx](http://roots.cx)
+	## Site Structure
+h3 Tech
+ul
+	for tech in site.tech
+		li: a(href=tech.url)= tech.title
 
-:coffeescript
-	console.log 'you can even use coffeescript in your views, aw yeah'
+h3 Topics
+ul
+	for topic in site.topics
+		li: a(href=topic.url)= topic.title
