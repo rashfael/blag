@@ -1,102 +1,112 @@
-:markdown
-	# Notes on Tech
-	## Hi, I am rash, and this is my opinion on everything techy.
-	
-	When selecting a specific technology, you can almost always throw away any source on the interwebs. It is either advertising or ranting, and you hardly find anything objective, let alone supported by data.
 
-	There are some good comparisons on the feature level, but most benchmarks are just laughable.
+.textblob
+	:markdown
+		# Notes on Tech
+		## Hi, I am rash, and this is my opinion on everything techy.
+		
+		When selecting a specific technology, you can almost always throw away any source on the interwebs. It is either advertising or ranting, and you hardly find anything objective, let alone supported by data.
 
-	Mistake number one most articles make is comparison on an absolute level. "A is better than B".  
-	For most technology there is no absolute quality to measure, you cannot boil it down to a simple "good" or "bad".  
-	Sure, you can identify some stupendiously horrible technology by knock out criterias, but that is mostly it.  
-	For anything else, you need to know the application and the circumstances. "A is better than B for X".  
-	I am here trying to find a format to compare technology objectively and to take into account the specific application and circumstances.  
-	Of course, I cannot just list all circumstances, but I can make the content of the page structured enough to make a objective choice.  
-	Now, this is very much a Work In Progress, and I have no idea yet how to format all of this. So, brainstorm time!
+		There are some good comparisons on the feature level, but most benchmarks are just laughable.
 
+		Mistake number one most articles make is comparing technology on an absolute level.
 
-	### FORMAT
+		> A is better than B.
 
-	The ideal playing field for a tech comparison is free from constraints and would only look at the application.
-	Application of technology and effectiveness of its use is one important measure.
+		For most technologies, there is no absolute quality to measure, you cannot boil it down to a simple "good" or "bad".
+		Sure, you can identify some stupendiously horrible technology by knock out criterias, but that is mostly it.
 
-	`C is better than Lua for real time systems`
+		For anything else, you need to know the application and the circumstances.
 
-	is pretty clear. Of course, I cannot just make that statement, since I aim to do science here, so I have to argue for it.
-	If I would go on, I'd reason that a compiled language is generally faster than an interpreted, and that C has a more predictable execution time than Lua. And I could go on.  
-	
+		> A is better than B for X.
 
-	`Roots is better than Typo3 for a blog`
+		Because of this, I am trying to find a format to compare technology objectively and to take into account the specific application and circumstances.
+		Of course, I cannot just list all circumstances, but I can make the content of this website structured enough to enable readers to make a objective choice.
 
-	Now, everyone except the fanboys for one or the other would say:
-
-	`Depends …`
-
-	Because, both are made FOR creating websites, including blogs.  
-	But, this is where circumstances come into play. Do you have prior experience with one or both and / or the sourrounding ecosystem / programming language? Does your deployment have any constraints?
-
-	Almost all decisions related to use of a technology are constrained by a multitude of factors, and it is entirely useless if one tech is 5% faster than the other if speed is not of primary concern.
-
-	I will call these factors Environment.  
-	Aspects of the techs should also be weighted. 
-
-	#### Experience
-
-	I think, one important factor to look at is experience. Obviously, direct experience with one technology, but also experience in one ecosystem. Switching tech inside one ecosystem is easier than switching to a new one.
-
-	#### Reasons
-
-	Or, what questions are being asked?
-
-	Is there a current tech in use, and has to be replaced?
-
-	Or, for example, does a decision have to be made which tech is going to be used in a new project?
-
-	For the second case, a direct comparison can be made between candidates, rated in regard to the environment.
-
-	For the first case, an additional cost of switching from an already in use technology has to be taken in regard (aka "how much pain do you have with your current techs"). This often constitudes a switch of ecosystem or multiple techs, so relationship between techs is also a factor.
+		Now, this is very much a *Work In Progress*, and I have no idea yet how to format all of this. **So, brainstorm time!**
 
 
-	#### Scales!
+		### FORMAT
 
-	I will resist just applying a "from 1 to 10" scale or something similar before having thought about it, so here it goes.
+		The ideal playing field for a tech comparison is free from constraints and would only look at the application.
+		Application of technology and effectiveness of its use is one important measure.
 
-	What is a scale good for? To measure something and perhaps compare those measurements.
-	There is some [theory on scales](http://en.wikipedia.org/wiki/Level_of_measurement), defining different scales:
-	- Nominal Scale: essentially an unordered list
-	- Ordinal Scale: a ranked list
-	- Interval Scale: you can tell how much difference there is between elements, but cant do math on that
-	- Ratio Scale: all the math! (A is twice as efficient as B)
+		> C is better than Lua for real time systems
 
-	##### Quantity of Scales
-	Assigning one number to a whole tech is a bit cheap, and totally unhelpful in my opinion.  
-	Grading technologies in categories seems a bit better, but then, categories differ too much between applications.  
-	On the top of my head, I would say, usability, learning curve, performance, support and ecosystem would be some good ones, and many more.
+		is pretty clear. Of course, I cannot just make that statement, since I aim to do science here, so I have to argue for it.
+		If I would go on, I'd reason that a compiled language is generally faster than an interpreted, and that C has a more predictable execution time than Lua. And I could go on.  
+		
 
-	But that does not seem sufficient. Perhaps we should look at in in a different angle.
+		> Roots is better than Typo3 for a blog
 
-	#### Value and Cost
-	The real question when choosing a technology is:
+		Now, everyone except the fanboys for one or the other would say:
 
-	`What is the value of the technology, what is the cost of changing, and does one outweight the other?`
+		> Depends …
 
-	Value is probaly a function over time, or at least tiered by short- / mid- / longterm value.
+		Because, both are made FOR creating websites, including blogs.  
+		But, this is where circumstances come into play. Do you have prior experience with one or both and / or the sourrounding ecosystem / programming language? Does your deployment have any constraints?
 
-	Perhaps add some multipliers, for example "2x usability if you already have at least one project with that tech", some kind of synergy multiplier or cumulative bonus.
+		Almost all decisions related to use of a technology are constrained by a multitude of factors, and it is entirely useless if one tech is 5% faster than the other if speed is not of primary concern.
 
-	Cost for changing is a one time expense (cost for using legacy tech would be a negative value, I think), indicating expense (of mostly time / manpower) into initial learning.
+		I will call these factors Environment.  
+		Aspects of the techs should also be weighted. 
 
-	There could be a multiplier when changing ecosystems and paradigms, but that are nuances.
+		#### Experience
 
-	Maybe I can build a comparator, where you can calculate the cost for going from A to B?
+		I think, one important factor to look at is experience. Obviously, direct experience with one technology, but also experience in one ecosystem. Switching tech inside one ecosystem is easier than switching to a new one.
 
-//- ### measurements on Tech is the collection of my opinions.
-//- ### Each opinion is rated by objectiveness, depth of study and experience. (Also, out-of-date-iness).
+		#### Reasons for Switching
 
-//- This site is not a chronological blog, but perhaps I list the changelogs somewhere.  
-//- Sometimes, articles have the warning tag "retrospective", when it has been some time between encounter and writing down of my opinion.
+		Or, what questions are being asked?
 
-//- My favorite techs currently are nodejs, coffeescript, mongodb, redis, archlinux
+		Is there a current tech in use, and has to be replaced?
+
+		Or, for example, does a decision have to be made which tech is going to be used in a new project?
+
+		For the second case, a direct comparison can be made between candidates, rated in regard to the environment.
+
+		For the first case, an additional cost of switching from an already in use technology has to be taken in regard (aka "how much pain do you have with your current techs"). This often constitudes a switch of ecosystem or multiple techs, so relationship between techs is also a factor.
+
+
+		#### Scales!
+
+		I will resist just applying a "from 1 to 10" scale or something similar before having thought about it, so here it goes.
+
+		What is a scale good for? To measure something and perhaps compare those measurements.
+		There is some [theory on scales](http://en.wikipedia.org/wiki/Level_of_measurement), defining different scales:
+		- Nominal Scale: essentially an unordered list
+		- Ordinal Scale: a ranked list
+		- Interval Scale: you can tell how much difference there is between elements, but cant do math on that
+		- Ratio Scale: all the math! (A is twice as efficient as B)
+
+		##### Quantity of Scales
+		Assigning one number to a whole tech is a bit cheap, and totally unhelpful in my opinion.  
+		Grading technologies in categories seems a bit better, but then, categories differ too much between applications.  
+		On the top of my head, I would say, usability, learning curve, performance, support and ecosystem would be some good ones, and many more.
+
+		But that does not seem sufficient. Perhaps we should look at in in a different angle.
+
+		#### Value and Cost
+		The real question when choosing a technology is:
+
+		> What is the value of the technology, what is the cost of changing, and does one outweight the other?
+
+		Value is probaly a function over time, or at least tiered by short- / mid- / longterm value.
+
+		Perhaps add some multipliers, for example "2x usability if you already have at least one project with that tech", some kind of synergy multiplier or cumulative bonus.
+		
+		Cost for changing is a one time expense (cost for using legacy tech would be a negative value, I think), indicating expense (of mostly time / manpower) into initial learning.
+
+		There could be a multiplier when changing ecosystems and paradigms, but that are nuances.
+
+		Maybe I can build a comparator, where you can calculate the cost for going from A to B?
+
+	//- ### measurements on Tech is the collection of my opinions.
+	//- ### Each opinion is rated by objectiveness, depth of study and experience. (Also, out-of-date-iness).
+
+	//- This site is not a chronological blog, but perhaps I list the changelogs somewhere.  
+	//- Sometimes, articles have the warning tag "retrospective", when it has been some time between encounter and writing down of my opinion.
+
+	//- My favorite techs currently are nodejs, coffeescript, mongodb, redis, archlinux
 
 h2 Site
 h3 Tech

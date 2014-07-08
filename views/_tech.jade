@@ -11,6 +11,15 @@ html
 		link(rel='stylesheet', href='/css/master.css')
 	body
 		h1 Tech
+		h3= post.type
+		h4= post.subtypes
+		if(post.ecosystems)
+			h3
+				| ecosystems:  
+				for eco in post.ecosystems
+					a(href='#')= eco
+					|  
+
 		!= content
 
 		//- add other scripts through require.js, not here

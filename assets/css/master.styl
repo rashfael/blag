@@ -3,5 +3,21 @@
 normalize()
 base()
 
+blockquote
+	:before
+		content: '“ '
+
+		font-size: 2em
+	:after
+		content: ' ”'
+		font-size: 2em
+		
+	blockquote()
+
+
 body
 	padding: 50px
+
+.textblob
+	width 35em
+	text-align justify
