@@ -1,0 +1,53 @@
+---
+title: Java
+layout: ../views/_tech.jade
+type: programming language
+subtypes: [static]
+ecosystems: [java, jvm]
+---
+
+:markdown
+	Long, old list of "why java is shit":
+
+	* no real generics
+	* no switch with strings
+	* no function pointers
+	* no real event framework
+	* properties everywhere!
+	* no C#-like Properties (get/set hiding)
+	* no Structs/Records
+
+	german:
+
+	* keine Initialisierungssyntax für Objekte (nur Arrays), bitte schreiben Sie für jede Klasse einen sterbenslangweiligen Konstruktor
+	* keine Default-Parameter (bitte schreiben Sie zehntausend Überladungen und copypasten die Dokumentation)
+	* keine Operatorüberladung, <tt>==</tt>-<tt>equals()</tt>-Dilemma
+	* keine virtuellen Konstruktoren; Super-Konstruktor-Aufruf nur als erstes Statement möglich
+	* statt anonymer Funktionen nur anonyme Klassen… in der Praxis häufig mit genau einer Methode
+	* Tendenz von Bibliotheken, an strategischen Stellen die Typsicherheit zugunsten von magischen Strings aufzugeben (z.B. javax.mail, JDBC), so dass Laufzeitfehler trotz aller statischen Typprüfung garantiert sind
+	* keine Klassenerweiterungen/Extensions
+	* keine geteilte Klassen/Partials
+	* keine "protected"-Scope. Java ''protected'' ist Sichtbarkeit für Unterklassen '''und Package'''.
+	* keine gescheite Threadsynchronisierung
+	* keine bedingte Kompilierung möglich, falls etwas doch mal etwas plattformabhängig ist (siehe Apples SDK-Erweiterungen)
+	* endless stupid magic mit Interfacen wie ''Cloneable'', das nicht etwa die Methode '''clone()''' enthält, sondern dem Programmierer nur sagt, dass er sie aufrufen darf.
+	* keine Koroutinen
+	* Rückgabetyp nicht in Methodensignatur
+	* gehört Oracle
+	* hat seine hässlichen, bloatigen Toolkits so durchgedrückt, dass zwar Alternativen existieren, aber kaum benutzt werden.
+	* Iteratoren stehen zwischen statt auf den Werten und haben deshalb kein '''Current'''.
+	* inkonsistente Bezeichner (<tt>array.length</tt> vs. <tt>list.size()</tt> vs. <tt>foobar.count()</tt>)
+	* zig String-Klassen (<tt>String</tt>, <tt>StringBuilder</tt>, <tt>StringBuffer</tt>, ...) aber kein '''String.join(List)'''
+	* Swing totaler Bullshit
+	** kann nix komplizierteres, das man in etwa jedem zweiten Programm braucht, muss jedes Mal selber implementiert werden
+	** grottenlahm durch Zeichnen in Java
+	** eigenes hässliches und nicht natives Aussehen
+	** <tt>JList</tt> nicht editierbar, <tt>JTable</tt> und <tt>JTree</tt> z.B. schon
+	** keine direkte i18n-/l10n-Unterstützung
+	** geschicktere Listener-Implementierungen, z.B. Signal-Slot-Konzept, '''fire()''' muss immer selber definiert werden
+	** grottige Dokumentation: JPanel.validate() validates the panel
+	** <tt>Desktop</tt> gar nicht plattformunabhängig, NotSupportedExeption auf GNU/Linux mit KDE
+	** Swing & Mac auch witzlos, Qt kann Menü- und Werkzeugleisten komfortabler/automatisch korrekt behandeln
+	* <tt>java.util.Date</tt> mit brauchbarer API obsolete, dafür <tt>Calendar</tt> mit unbedienbarer Schnittstelle (<tt>cal.get(Calendar.YEAR)</tt> statt <tt>date.getYear()</tt>)
+	* <tt>Array.toString()</tt> liefert unsinnigen String zurück
+	* Fehlender <tt>in</tt>-Operator, der auf Arrays und Listen anwendbar ist, <tt>Arrays.binarySearch(array, element) > -1</tt> oder <tt>list.contains(element)</tt> sehr umständlich
