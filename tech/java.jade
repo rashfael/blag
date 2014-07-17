@@ -16,24 +16,33 @@ ecosystems: [java, jvm]
 	* properties everywhere!
 	* no C#-like Properties (get/set hiding)
 	* no Structs/Records
+	* no initializing syntax for class fields, write stupid constructors
+	* no default paramaters
+	* no operator overloading!
+	* no virtual constructors, super constructor must be called first
+	* only anonymous classes, not methods
+	* many libraries use magic strings, lose static typing
+	* no class extensions
+	* no partial classes
+	* no 'protected' scope only for subclasses
+	* no help for thread syncronisation
+	* no conditional compilations (macros)
+	* stupid magical Interfaces like 'Cloneable', which does not contain the method 'clone()', but is used as a flag for developers
+	* no coroutines
+	* return type not in method signature
+	* OWNED BY ORACLE
+	* Iterators hold between values instead of on values and have no 'current'
+	* inconsistent naming (<tt>array.length</tt> vs. <tt>list.size()</tt> vs. <tt>foobar.count()</tt>)
+	* a ton of string classes (<tt>String</tt>, <tt>StringBuilder</tt>, <tt>StringBuffer</tt>, ...) but no '''String.join(List)'''
+	* Swing, srlsy
+		*
+	* java.util.Date deprecated and Calendar with ridiculous Interfaces
+	* Array.toString() makes no sense
+	* missing 'in' operator for arrays and lists
+
 
 	german:
 
-	* keine Initialisierungssyntax für Objekte (nur Arrays), bitte schreiben Sie für jede Klasse einen sterbenslangweiligen Konstruktor
-	* keine Default-Parameter (bitte schreiben Sie zehntausend Überladungen und copypasten die Dokumentation)
-	* keine Operatorüberladung, <tt>==</tt>-<tt>equals()</tt>-Dilemma
-	* keine virtuellen Konstruktoren; Super-Konstruktor-Aufruf nur als erstes Statement möglich
-	* statt anonymer Funktionen nur anonyme Klassen… in der Praxis häufig mit genau einer Methode
-	* Tendenz von Bibliotheken, an strategischen Stellen die Typsicherheit zugunsten von magischen Strings aufzugeben (z.B. javax.mail, JDBC), so dass Laufzeitfehler trotz aller statischen Typprüfung garantiert sind
-	* keine Klassenerweiterungen/Extensions
-	* keine geteilte Klassen/Partials
-	* keine "protected"-Scope. Java ''protected'' ist Sichtbarkeit für Unterklassen '''und Package'''.
-	* keine gescheite Threadsynchronisierung
-	* keine bedingte Kompilierung möglich, falls etwas doch mal etwas plattformabhängig ist (siehe Apples SDK-Erweiterungen)
-	* endless stupid magic mit Interfacen wie ''Cloneable'', das nicht etwa die Methode '''clone()''' enthält, sondern dem Programmierer nur sagt, dass er sie aufrufen darf.
-	* keine Koroutinen
-	* Rückgabetyp nicht in Methodensignatur
-	* gehört Oracle
 	* hat seine hässlichen, bloatigen Toolkits so durchgedrückt, dass zwar Alternativen existieren, aber kaum benutzt werden.
 	* Iteratoren stehen zwischen statt auf den Werten und haben deshalb kein '''Current'''.
 	* inkonsistente Bezeichner (<tt>array.length</tt> vs. <tt>list.size()</tt> vs. <tt>foobar.count()</tt>)
